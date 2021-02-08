@@ -30,13 +30,13 @@ export default function UserReg() {
         name: '',
         phone: '',
         email: '',
-        bloodgroup:0,
-        dob:'',
-        address:'',
-        city:'',
-        state:'',
-        pincode:'',
-        password:'',
+        bloodgroup: 0,
+        dob: '',
+        address: '',
+        city: '',
+        state: '',
+        pincode: '',
+        password: '',
     });
 
     const handleDateChange = (date) => {
@@ -70,9 +70,9 @@ export default function UserReg() {
             <div>
                 User Registration Form
                 <form id="user-reg-form" className={classes.root} noValidate autoComplete="off">
-                    <TextField id="reg-user-name" label="Name" variant="outlined" name="name" onChange={handleChange}/>
-                    <TextField id="reg-user-phone" label="Phone Number" variant="outlined" name="phone" onChange={handleChange}/>
-                    <TextField id="reg-user-email" label="Email Address" variant="outlined" type="email" name="email" onChange={handleChange}/>
+                    <TextField id="reg-user-name" label="Name" variant="outlined" name="name" onChange={handleChange} />
+                    <TextField id="reg-user-phone" label="Phone Number" variant="outlined" name="phone" onChange={handleChange} />
+                    <TextField id="reg-user-email" label="Email Address" variant="outlined" type="email" name="email" onChange={handleChange} />
                     <InputLabel id="demo-customized-select-label">Age</InputLabel>
                     <FormControl className={classes.formControl}>
                         <Select
@@ -111,11 +111,11 @@ export default function UserReg() {
                             />
                         </Grid>
                     </MuiPickersUtilsProvider>
-                    <TextField id="reg-user-address" label="Address" variant="outlined" name="address" onChange={handleChange}/>
-                    <TextField id="reg-user-city" label="City" variant="outlined" name="city" onChange={handleChange}/>
-                    <TextField id="reg-user-state" label="State" variant="outlined" name="state" onChange={handleChange}/>
-                    <TextField id="reg-user-pincode" label="Pincode" variant="outlined" name="pincode" onChange={handleChange}/>
-                    <TextField id="reg-user-password" label="Password" variant="outlined" type="password" name="password" onChange={handleChange}/>
+                    <TextField id="reg-user-address" label="Address" variant="outlined" name="address" onChange={handleChange} />
+                    <TextField id="reg-user-city" label="City" variant="outlined" name="city" onChange={handleChange} />
+                    <TextField id="reg-user-state" label="State" variant="outlined" name="state" onChange={handleChange} />
+                    <TextField id="reg-user-pincode" label="Pincode" variant="outlined" name="pincode" onChange={handleChange} />
+                    <TextField id="reg-user-password" label="Password" variant="outlined" type="password" name="password" onChange={handleChange} />
                     <Button id="reg-user" variant="contained" color="primary">
                         Register
                     </Button>
